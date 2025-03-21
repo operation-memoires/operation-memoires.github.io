@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- normalize -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/gamexs.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+  <title>Dorn-Archives</title>
+  <style>
+    .landing .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px; /* Espacement entre les éléments */
+      flex-wrap: wrap; /* Permet l'adaptation sur petits écrans */
+    }
+
+    .landing .text {
+      max-width: 50%;
+    }
+
+    .landing img {
+      max-width: 40%;
+      height: auto;
+      border-radius: 10px; /* Coins arrondis pour un meilleur rendu */
+    }
+
+    /* Version mobile */
+    @media (max-width: 768px) {
+      .landing .container {
+        flex-direction: column; /* Empile les éléments verticalement */
+        text-align: center;
+      }
+
+      .landing img {
+        max-width: 80%; /* Image plus grande sur mobile */
+        order: -1; /* Place l'image juste après le titre */
+      }
+
+      .landing .text {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- start header -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo">Opération Mémoire</a>
+    </div>
+  </header>
+  <!-- end header -->
+
+  <!-- start landing -->
+  <div class="landing">
+    <div class="container">
+      <div class="text">
+        <h3 id="titre">Chargement du titre...</h3>
+        <div id="img"></div>
+        <p id="description">Chargement de la description...</p>
+        <a href="index.html"><p>Retourner à l'accueil</p></a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script_archive.js"></script>
+
+</body>
+</html>
