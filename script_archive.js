@@ -9,8 +9,8 @@ fetch("data/"+num_archive+".json")
         let description = data["description"];
 
         // On met le bon numero dans le titre
-        document.getElementById("titre").innerText = "Archive n°"+num_archive;
-        document.title = "Archive n°"+num_archive;
+        document.getElementById("titre").innerText = "Archive "+num_archive;
+        document.title = "Archive "+num_archive;
 
         // On met la bonne image
         document.getElementById("img").innerHTML = "<img src='"+img_link+"' alt='"+description+"'>";

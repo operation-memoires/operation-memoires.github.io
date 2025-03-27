@@ -1,7 +1,13 @@
+archive_video = "RUD-MM-42"
+
 function recupererValeur() {
     let valeur = document.getElementById("input").value;
-    console.log("Valeur entrée :", valeur);
-    window.location.href = "archive.html?num="+valeur;
+
+    if (valeur == archive_video) {
+        window.location.href = "video.html";
+    } else {
+        window.location.href = "archive.html?num="+valeur;
+    }
 }
 
 // Écoute l'événement "keydown" sur l'input
